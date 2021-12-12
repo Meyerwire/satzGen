@@ -1,0 +1,25 @@
+{
+    "Namen":{
+        "1":"Jerry",
+        "2":"Fabian",
+        "3":"Matze",
+        "4":"Bosse",
+        "5":"Timo",
+        "6":"Simon",
+        "7":"Lena",
+        "8":"Laurids",
+        "9":"Can",
+        "10":"Oke",
+        "11":"Connor"
+    },
+    "Verben":{
+        "1":"fährt",
+        "2":"springt",
+        "3":"läuft"
+    },
+    "Zwischenworte":{
+        "1":"im",
+        "2":"zum",
+        "3":"am"
+    }
+}
