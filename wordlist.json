@@ -1,5 +1,5 @@
 {
-    "Namen":{
+    "Subjekt":{
         "1":"Jerry",
         "2":"Fabian",
         "3":"Matze",
@@ -21,5 +21,10 @@
         "1":"im",
         "2":"zum",
         "3":"am"
+    },
+    "Ogjekte":{
+        "1":"Kreis",
+        "2":"Auto",
+        "3":"Schule"
     }
 }

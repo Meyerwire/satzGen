@@ -9,19 +9,12 @@ with open('wordlist.json','r') as mylist:
 
 wordlist_json = json.loads(wList)
 
-
-
 window = tk.Tk()
+window.title ("Zufällige Sätze")
+window.geometry("300x150")
+window.resizable(False,False)
 
-window.title = "Zufällige Sätze"
-window.geometry("600x400")
-
-newlabel = tk.Label(text = "Satz Generator")
-newlabel.grid(column=0,row=0)
-
-GoButton = tk.Button(window,text = "Go" ,  command = helperClass.GenSent(wordlist_json,tkm) )
-GoButton.grid(column=100,row=100)
-
-
+GoButton = tk.Button(window,width=10,text = "Go" ,  command =lambda: helperClass.GenSent(wordlist_json,tkm))
+GoButton.pack()
 
 window.mainloop()
