@@ -11,19 +11,14 @@ with open('wordlist.json','r') as mylist:
 wordlist_json = json.loads(wList)
 
 #fenster initaliesieren
-window = tk.Tk()
-window.title ("Zufällige Sätze")
-window.geometry("300x150")
-window.resizable(False,False)
-#alert init
-AddAlert = tk.Tk()
-AddAlert.title("Add")
-AddAlert.geometry("150x150")
-AddAlert.resizable(False,False)
+master_window = tk.Tk()
+master_window.title ("Zufällige Sätze")
+master_window.geometry("300x150")
+master_window.resizable(False,False)
+
 
 #buttons inout fields etc
-GoButton = tk.Button(window,width=10,text = "Go" ,  command =lambda: helperClass.GenSent(wordlist_json,tkm)).pack()
-AddButton = tk.Button(window,width=10,text="Add",command=helperClass.AddWord ).pack()
-inputField = tk.Canvas(AddAlert)
+GoButton = tk.Button(master_window,width=10,text = "Go" ,  command =lambda: helperClass.GenSent(wordlist_json,tkm)).pack()
+AddButton = tk.Button(master_window,width=10,text="Add",command=lambda: helperClass.AddWord(tk,master_window) ).pack()
 
-window.mainloop()
+master_window.mainloop()
